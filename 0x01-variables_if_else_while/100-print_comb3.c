@@ -8,8 +8,9 @@
  */
 int main(void)
 {
+	int i;
 
-	for (int i = 1; i < 90; i++)
+	for (i = 1; i < 90; i++)
 	{
 		if (i < 10)
 			putchar('0' + i);
