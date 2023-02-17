@@ -7,15 +7,9 @@
  */
 int main(void)
 {
-<<<<<<< HEAD
-	int i;
-
-	for (i = 1; i < 90; i++)
-=======
 	int digit1, digit2;
 
 	for (digit1 = 0; digit1 < 9; digit1++)
->>>>>>> 8053e1ec58ba128ba1fe90b17249a4a83c14c66f
 	{
 		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
 		{
@@ -29,6 +23,7 @@ int main(void)
 			}
 		}
 	}
+	
 	putchar('\n');
 
 	return (0);
