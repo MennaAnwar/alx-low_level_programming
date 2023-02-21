@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * If n is greater than 15 or less than 0 the function should not print anything
  * Return: times table
@@ -13,9 +14,7 @@ void print_times_table(int n)
 	{
 		while (row <= n)
 		{
-			_putchar('0');
-			_putchar(',');
-			_putchar(' ');
+			printf("0,   ")
 			col = 1;
 			while (col <= n)
 			{
@@ -27,10 +26,7 @@ void print_times_table(int n)
 			
 				_putchar((d % 10) + '0');
 				if (col < n)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
+					printf(",   ");
 				col++;
 			}
 			_putchar('\n');
