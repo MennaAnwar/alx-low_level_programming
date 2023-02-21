@@ -26,7 +26,7 @@ void print_times_table(int n)
 					_putchar(' ');
 			
 				_putchar((d % 10) + '0');
-				if (col < 9)
+				if (col < n)
 				{
 					_putchar(',');
 					_putchar(' ');
