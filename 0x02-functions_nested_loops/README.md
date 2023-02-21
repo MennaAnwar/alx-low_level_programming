@@ -79,7 +79,7 @@ Write a function that adds two integers and returns the result.
 ```
 * Prototype: int add(int, int);
 
-[11-print_98.c](./11-print_98.c)
+[11-print_98.c](./11-print_to_98.c)
 ```
 Write a function that prints all natural numbers from n to 98, followed by a
 new line.
