@@ -2,7 +2,7 @@
 
 ## Multiple mains
 
-In most projects, we often give you only one main file to test with. For example, this main file is a test for a `positive_or_negative()` function similar to the one you worked with in [an earlier C task](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/0-positive_or_negative.c):
+In most projects, we often give you only one main file to test with. For example, this main file is a test for a `positive_or_negative()` function similar to the one you worked with in [an earlier C task](https://github.com/MennaAnwar/alx-low_level_programming/blob/main/0x01-variables_if_else_while/0-positive_or_negative.c):
 
 ```
 carrie@ubuntu:/debugging$ cat main.c
@@ -109,9 +109,9 @@ carrie@ubuntu:/debugging$
 This program prints the largest of three integers.
 
 ```
-$ amonkeyprogrammer@ubuntu:/debugging$ cat 2-main.c
+carrie@ubuntu:/debugging$ cat 2-main.c
 #include <stdio.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
 * main - prints the largest of 3 integers
@@ -133,12 +133,12 @@ int main(void)
 
         return (0);
 }
-$ amonkeyprogrammer@ubuntu:/debugging$
+carrie@ubuntu:/debugging$
 ```
 
 ```
-$ amonkeyprogrammer@ubuntu:/debugging$ cat 2-largest_number.c
-#include "holberton.h"
+carrie@ubuntu:/debugging$ cat 2-largest_number.c
+#include "main.h"
 
 /**
  * largest_number - returns the largest of 3 numbers
@@ -168,14 +168,14 @@ int largest_number(int a, int b, int c)
     return (largest);
 }
 
-$ amonkeyprogrammer@ubuntu:/debugging$
+carrie@ubuntu:/debugging$
 ```
 
 ```
-$ amonkeyprogrammer@ubuntu:/debugging$ gcc -Wall -Werror -Wextra -pedantic 2-largest_number.c 2-main.c -o 2-main
-$ amonkeyprogrammer@ubuntu:/debugging$ ./2-main
+carrie@ubuntu:/debugging$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 2-largest_number.c 2-main.c -o 2-main
+carrie@ubuntu:/debugging$ ./2-main
 0 is the largest number
-$ amonkeyprogrammer@ubuntu:/debugging$
+carrie@ubuntu:/debugging$
 ```
 
 ? That’s definitely not right.
@@ -191,9 +191,9 @@ Fix the code in `2-largest_number.c` so that it correctly prints out the largest
 This program converts a date to the day of year and determines how many days are left in the year, taking leap year into consideration.
 
 ```
-$ amonkeyprogrammer@ubuntu:/debugging$ cat 3-main_a.c
+carrie@ubuntu:/debugging$ cat 3-main_a.c
 #include <stdio.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
 * main - takes a date and prints how many days are left in the year, taking
@@ -220,12 +220,12 @@ int main(void)
     return (0);
 }
 
-$ amonkeyprogrammer@ubuntu:/debugging$
+carrie@ubuntu:/debugging$
 ```
 
 ```
-$ amonkeyprogrammer@ubuntu:/debugging$ cat 3-convert_day.c
-#include "holberton.h"
+carrie@ubuntu:/debugging$ cat 3-convert_day.c
+#include "main.h"
 
 /**
 * convert_day - converts day of month to day of year, without accounting
@@ -278,13 +278,13 @@ int convert_day(int month, int day)
     return (day);
 }
 
-$ amonkeyprogrammer@ubuntu:/debugging$
+carrie@ubuntu:/debugging$
 ```
 
 ```
-$ amonkeyprogrammer@ubuntu:/debugging$ cat 3-print_remaining_days.c
+carrie@ubuntu:/debugging$ cat 3-print_remaining_days.c
 #include <stdio.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
 * print_remaining_days - takes a date and prints how many days are
@@ -321,26 +321,26 @@ void print_remaining_days(int month, int day, int year)
     }
 }
 
-$ amonkeyprogrammer@ubuntu:/debugging$
+carrie@ubuntu:/debugging$ 
 ```
 
 ```
-$ amonkeyprogrammer@ubuntu:/debugging$ gcc -Wall -Werror -Wextra -pedantic 3-convert_day.c 3-print_remaining_days.c 3-main_a.c -o 3-main_a 
-$ amonkeyprogrammer@ubuntu:/debugging$ ./3-main_a
+carrie@ubuntu:/debugging$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 3-convert_day.c 3-print_remaining_days.c 3-main_a.c -o 3-main_a 
+carrie@ubuntu:/debugging$ ./3-main_a
 Date: 04/01/1997
 Day of the year: 91
 Remaining days: 274
-$ amonkeyprogrammer@ubuntu:/debugging$
+carrie@ubuntu:/debugging$
 ```
 
 Output looks good for `04/01/1997`! Let’s make a new main file `3-main_b.c` to try a case that is a leap year: `02/29/2000`.
 
 ```
-$ amonkeyprogrammer@ubuntu:/debugging$ gcc -Wall -Werror -Wextra -pedantic 3-convert_day.c 3-print_remaining_days.c 3-main_b.c -o 3-main_b 
-$ amonkeyprogrammer@ubuntu:/debugging$ ./3-main_b
+carrie@ubuntu:/debugging$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 3-convert_day.c 3-print_remaining_days.c 3-main_b.c -o 3-main_b 
+carrie@ubuntu:/debugging$ ./3-main_b
 Date: 02/29/2000
 Invalid date: 02/29/2000
-$ amonkeyprogrammer@ubuntu:/debugging$
+carrie@ubuntu:/debugging$
 ```
 
 ? That doesn’t seem right.
@@ -351,4 +351,4 @@ Fix the `print_remaining_days()` function so that the output works correctly for
 * You can assume that all test cases have valid months (i.e. the value of `month` will never be less than `1` or greater than `12`) and valid days (i.e. the value of `day` will never be less than `1` or greater than `31`).
 * You can assume that all test cases have valid month/day combinations (i.e. there will never be a June 31st or November 31st, etc.), but not all month/day/year combinations are valid (i.e. February 29, 1991 or February 29, 2427).
 
-**Solution:** [3-print_remaining_days.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x03-debugging/3-print_remaining_days.c), [holberton.h](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x03-debugging/holberton.h)
+**Solution:** [3-print_remaining_days.c](./3-print_remaining_days.c), [main.h](./main.h)
