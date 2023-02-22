@@ -184,7 +184,7 @@ Fix the code in `2-largest_number.c` so that it correctly prints out the largest
 
 * Line count will not be checked for this task.
 
-**Solution:** [2-largest_number.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x00-hello_world/0-preprocessor), [holberton.h](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x03-debugging/holberton.h)
+**Solution:** [2-largest_number.c](https://github.com/MennaAnwar/alx-low_level_programming/blob/main/0x00-hello_world/0-preprocessor), [main.h](./main.h)
 
 ## Leap year
 
