@@ -61,10 +61,10 @@ Copy this main file. Comment out (don’t delete it!) the part of the code that 
 * Don’t add or remove any lines of code, as we will be checking your line count. You are only allowed to comment out existing code.
 * You do not have to compile with `-Wall -Werror -Wextra -pedantic` for this task.
 
-**Solution:** [1-main.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x03-debugging/1-main.c)
+**Solution:** [1-main.c](./1-main.c)
 
 ```
-$ amonkeyprogrammer@ubuntu:/debugging$ cat 1-main.c
+carrie@ubuntu:/debugging$ cat 1-main.c
 #include <stdio.h>
 
 /**
@@ -89,19 +89,19 @@ int main(void)
 
         return (0);
 }
-$ amonkeyprogrammer@ubuntu:/debugging$
+carrie@ubuntu:/debugging$
 ```
 
 Your output should look like this:
 
 ```
-$ amonkeyprogrammer@ubuntu:/debugging$ gcc 1-main.c -o 1-main
-$ amonkeyprogrammer@ubuntu:/debugging$ ./1-main
+carrie@ubuntu:/debugging$ gcc -std=gnu89 1-main.c -o 1-main
+carrie@ubuntu:/debugging$ ./1-main
 Infinite loop incoming :(
 Infinite loop avoided! \o/
-$ amonkeyprogrammer@ubuntu:/debugging$ wc -l 1-main.c
+carrie@ubuntu:/debugging$ wc -l 1-main.c
 24 1-main.c
-$ amonkeyprogrammer@ubuntu:/debugging$
+carrie@ubuntu:/debugging$
 ```
 
 ## 0 > 972?
