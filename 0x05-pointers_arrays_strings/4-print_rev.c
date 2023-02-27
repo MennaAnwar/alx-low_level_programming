@@ -4,14 +4,14 @@
  * _puts - prints a string to stdout
  * @str: pointer to the string to print
  */
-void _puts(char *str)
+void void print_rev(char *s)
 {
 	int i;
 
-	i = sizeof(str);
+	i = sizeof(s);
 	while (i >= 0)
 	{
-		_putchar(str[i--]);
+		_putchar(s[i--]);
 	}
 	_putchar('\n');
 }
