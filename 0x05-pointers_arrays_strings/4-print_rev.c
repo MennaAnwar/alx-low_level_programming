@@ -8,7 +8,7 @@ void _puts(char *str)
 {
 	int i;
 
-	i = str.length()-1;
+	i = sizeof(str)/sizeof(str[0]);
 	while (i >= 0)
 	{
 		_putchar(str[i--]);
