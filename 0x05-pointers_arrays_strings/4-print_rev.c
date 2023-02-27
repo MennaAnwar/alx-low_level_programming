@@ -3,8 +3,9 @@
 /**
  * _puts - prints a string to stdout
  * @str: pointer to the string to print
+ *
  */
-void void print_rev(char *s)
+void print_rev(char *s)
 {
 	int i;
 
