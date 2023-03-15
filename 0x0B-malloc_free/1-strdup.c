@@ -26,16 +26,8 @@ char *_strdup(char *str)
 	if (dup == NULL)
 		return (NULL);
 
-<<<<<<< HEAD
-	while (dup[i] = str[i]) != '\0'){
-		++;
-=======
-	while (str[i] != '\0')
-	{
-		dup[i] = str[i];
+	while ((dup[i] = str[i]) != '\0')
 		i++;
-	}
->>>>>>> e564940cca9e3add649e74bc10016e81cfb06757
 
 	return (dup);
 }
