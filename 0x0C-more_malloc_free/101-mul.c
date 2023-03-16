@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
+#include "is_digit.c"
+#include "strlen.c"
 
 
 /**
