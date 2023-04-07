@@ -14,8 +14,8 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	while (n_xor_m > 0)
 	{
-		flip_bits ++;
-		n_xor_m &= n_xor_m-1;
+		flip_bits++;
+		n_xor_m &= n_xor_m - 1;
 	}
 
 	return (flip_bits);
