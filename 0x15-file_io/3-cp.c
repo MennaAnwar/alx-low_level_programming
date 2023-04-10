@@ -38,15 +38,15 @@ int main(int argc, char *argv[])
 	}
 	close_src = close(src);
 	if (close_src < 0)
-  {
+	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", src);
-    exit(100);
-  }
+		exit(100);
+	}
 	close_dest = close(dest);
 	if (close_dest < 0)
-  {
+	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", dest);
-    exit(100);
-  }
+		exit(100);
+	}
 	return (0);
 }
