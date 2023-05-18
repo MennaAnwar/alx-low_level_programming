@@ -46,6 +46,3 @@
 * Prototype: int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
 * where index is the index of the node that should be deleted. Index starts at 0
 * Returns: 1 if it succeeded, -1 if it failed
-
-### USAGE
-Compile the programs with gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic
