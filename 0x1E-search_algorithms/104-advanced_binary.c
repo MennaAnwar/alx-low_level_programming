@@ -55,7 +55,7 @@ int advanced_binary(int *array, size_t size, int value)
 {
 	int index;
 
-	index = rec_search(array, size, value);
+	index = adv_rec_search(array, size, value);
 
 	if (index >= 0 && array[index] != value)
 		return (-1);
